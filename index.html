@@ -2,12 +2,31 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Contacto: Juan Pérez</title>
+  <title>Contacto: Erick Fernandez</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body { font-family: sans-serif; text-align: center; padding: 2em; }
-    .card { border: 1px solid #ccc; border-radius: 10px; padding: 1em; display: inline-block; }
-    button { padding: 10px 20px; font-size: 16px; border: none; background: #4CAF50; color: white; border-radius: 5px; }
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 1.5em;
+      display: inline-block;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background: #4CAF50;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .note {
+      margin-top: 1em;
+      font-size: 14px;
+      color: #666;
+    }
   </style>
 </head>
 <body>
@@ -16,7 +35,14 @@
     <p>📞 +1 809 669 6146</p>
     <p>✉️ e.fernandez@aerodom.com</p>
     <p>🌐 <a href="https://aeropuertolasamericas.com" target="_blank">Aeropuerto Las Américas</a></p>
-    <a href="contacto.vcf" download><button>Guardar contacto</button></a>
+    
+    <a href="contacto.vcf" download="erick-fernandez.vcf">
+      <button>Guardar contacto</button>
+    </a>
+
+    <div class="note">
+      📱 Si estás en iPhone y no se descarga, mantén presionado el botón y elige "Descargar archivo enlazado".
+    </div>
   </div>
 </body>
 </html>
